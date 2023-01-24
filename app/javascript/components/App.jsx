@@ -1,8 +1,23 @@
-import React from "react";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+import store from '../redux/store';
+import { AuthProvider } from '../services/Auth.context';
+import Routing from '../routes/index'
 
 const App = () => {
-  console.log("Vite");
-  return <div>Vite - React App</div>;
+  return (
+    <Provider store={store}>
+      <AuthProvider>
+        <Routing />
+        <ToastContainer />
+      </AuthProvider>
+    </Provider>
+  );
 };
 
 export default App;

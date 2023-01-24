@@ -7,7 +7,18 @@
     "dev": "bin/vite dev"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.4",
+    "deepmerge": "^4.2.2",
+    "formik": "^2.2.9",
+    "mdb-react-ui-kit": "^5.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.7.0",
+    "react-toastify": "^9.1.1",
+    "swr": "^2.0.1",
+    "yup": "^0.32.11"
   }
 }
